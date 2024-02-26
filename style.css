@@ -1,0 +1,99 @@
+#header{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+#bi{
+    text-align: center;
+    font-size: xx-large;
+    width: 100%;
+    font-weight: bold;
+}
+#newpartyoption{
+    display: flex;
+    margin: auto;
+}
+#text{
+    margin: 1%;
+    width: 46%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#pcode{
+    margin: 1%;
+    width: 30%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    
+}
+#sname{
+    margin: 1%;
+    width: 53%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#area{
+    margin: 1%;
+    width: 53%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#size{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#qty{
+    margin: 0.5%;
+    width: 5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#color{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#layer{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#rate{
+    margin: 0.5%;
+    width: 5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#dropdown{
+    margin: 1%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#submit{
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    margin: 1%;
+    align-items: center;
+    right: 50%;
+    border-radius: 25px;
+    height: 30px;
+    width: 300px;
+}
