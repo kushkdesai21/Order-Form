@@ -1,0 +1,130 @@
+#header{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+#bi{
+    text-align: center;
+    font-size: xx-large;
+    width: 100%;
+    font-weight: bold;
+}
+#text{
+    margin: 1%;
+    width: 250px;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#pcode{
+    margin: 1%;
+    width: 30%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 260px;
+    
+}
+#sname{
+    margin: 1%;
+    width: 53%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 255px;
+}
+#area{
+    margin: 1%;
+    width: 53%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 300px;
+}
+#tank{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 150px;
+}
+#size{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 155px;
+}
+#qty{
+    margin: 0.5%;
+    width: 5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 118px;
+}
+#color{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 145px;
+}
+#layer{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 145px;
+}
+#rate{
+    margin: 0.5%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 144px;
+}
+#dropdown{
+    margin: 1%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 300px;
+}
+#terms{
+    margin: 1%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+    width: 230px;
+}
+#dly{
+    margin: 1%;
+    width: 190px;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#remarks{
+    margin: 1%;
+    width: 265px;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 2px;
+}
+#submit{
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    margin: 1%;
+    align-items: center;
+    border-radius: 25px;
+    height: 30px;
+    width: 375px;
+}
