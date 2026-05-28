@@ -4,847 +4,737 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Arka Ganga Order Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="container">
-        <div id="header">
-            <div>
-                <img id="logo" src="Arka ganga PNG.png" alt="Arka Ganga">
-            </div>
 
-            <div id="bi">
-                BALAJI INDUSTRIES
-            </div>
+    <div class="background-glow"></div>
 
+    <div class="container">
+
+        <div class="top-bar">
+            <div class="brand-section">
+                <div>
+                    <img src="Arka ganga PNG.png" alt="Arka Ganga Logo" class="logo">
+                    <h1>Balaji Industries</h1>
+                </div>
+                
+                <div>
+                    <p>Sales Order Management Form</p>
+                </div>
+            </div>
         </div>
 
-        <hr>
+        <form name="Order Form" class="order-form">
 
-        <form id="form" action="" name="Order Form" method="post">
+            <!-- Customer Details -->
+            <div class="card">
+                <div class="section-title">
+                    <span>Customer Information</span>
+                </div>
 
-            <!--Sales -->
-            <label for="sales">Sales</label>
-            <select id="dropdown" name="sales" required>
-                <option value="" selected></option>
-                <option value="A/C">Account Department</option>
-                <option value="KD">Kaival</option>
-                <option value="BR">Babu Rao</option>
-                <option value="MG">Manjunath</option>
-                <option value="SB">Shashibhushan</option>
-                <option value="YP">Yogesh</option>
-            </select>
-            <br>
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label>Sales Executive</label>
+                        <select name="sales" required>
+                            <option value="">Select Sales Executive</option>
+                            <option value="A/C">Account Department</option>
+                            <option value="KD">Kaival</option>
+                            <option value="BR">Babu Rao</option>
+                            <option value="MG">Manjunath</option>
+                            <option value="SB">Shashibhushan</option>
+                            <option value="YP">Yogesh</option>
+                        </select>
+                    </div>
 
-            <!--New Party-->
+                </div>
+                
+                <div class="radio-wrapper">
+                    <label>New Party?</label>
+                    
+                    <div class="radio-group">
+                        <label class="radio-card">
+                            <input type="radio" name="newparty" value="Yes">
+                            <span>Yes</span>
+                        </label>
+                        
+                        <label class="radio-card active-radio">
+                            <input type="radio" name="newparty" value="No" checked>
+                            <span>No</span>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>Route</label>
+                        <select name="rno" required>
+                            <option value="">Select Route</option>
+                            <option value="R1M">Route 1M</option>
+                            <option value="R1Y">Route 1Y</option>
+                            <option value="R2">Route 2</option>
+                            <option value="R3">Route 3</option>
+                            <option value="R4">Route 4</option>
+                            <option value="R5">Route 5</option>
+                            <option value="R6">Route 6</option>
+                            <option value="R7">Route 7</option>
+                            <option value="MAG">Magadi</option>
+                            <option value="MADH">Madhugiri</option>
+                            <option value="Man">Mandya</option>
+                            <option value="TMK">Tumkur</option>
+                            <option value="AP">Andra Pradesh</option>
+                            <option value="Ball">Ballary</option>
+                            <option value="Dave">Davangere</option>
+                            <option value="Gaur">Gauribidanur</option>
+                            <option value="Hass">Hassan</option>
+                            <option value="Hubli">Hubli</option>
+                            <option value="Kol">Kolar</option>
+                            <option value="Mancity">Mandya City</option>
+                            <option value="Mang">Mangalore</option>
+                            <option value="Shiv">Shivmogga</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
 
-            <div id="newpartyoption">
-                <div>New Party?</div>
-                <input type="radio" id="radio" name="newparty" value="Yes">
-                <label for="Yes">Yes</label>
-                <input type="radio" id="radio" name="newparty" value="No" checked="checked">
-                <label for="No">No</label>
+                <div class="grid-3">
+                    <div class="input-group">
+                        <label>Party Code</label>
+                        <input type="text" name="pcode" placeholder="Enter Party Code" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Shop Name</label>
+                        <input type="text" name="sname" placeholder="Enter Shop Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Area</label>
+                        <input type="text" name="area" placeholder="Enter Area" required>
+                    </div>
+                </div>
             </div>
 
-            <!--Route No.-->
-            <label for="rno">Route</label>
-            <select id="dropdown" name="rno" required>
-                <option value="" selected></option>
-                <option value="R1M">Route 1M</option>
-                <option value="R1Y">Route 1Y</option>
-                <option value="R2">Route 2</option>
-                <option value="R3">Route 3</option>
-                <option value="R4">Route 4</option>
-                <option value="R5">Route 5</option>
-                <option value="R6">Route 6</option>
-                <option value="R7">Route 7</option>
-                <option value="MAG">Magadi</option>
-                <option value="MADH">Madhugiri</option>
-                <option value="Man">Mandya</option>
-                <option value="TMK">Tumkur</option>
-                <option value="AP">Andra Pradesh</option>
-                <option value="Ball">Ballary</option>
-                <option value="Dave">Davangere</option>
-                <option value="Gaur">Gauribidanur</option>
-                <option value="Hass">Hassan</option>
-                <option value="Hubli">Hubli</option>
-                <option value="Kol">Kolar</option>
-                <option value="Mancity">Mandya City</option>
-                <option value="Mang">Mangalore</option>
-                <option value="Shiv">Shivmogga</option>
-                <option value="TN">Tamil Nadu</option>
-                <option value="Others">Others</option>
-            </select>
-            <br>
-
-            <!--Party Code-->
-            <label for="pcode">Party Code</label>
-            <input type="text" id="pcode" name="pcode" required>
-            <br>
-
-            <!--Shop Name-->
-            <label for="sname">Shop Name</label>
-            <input type="text" id="sname" name="sname">
-            <br>
-
-            <!--Area-->
-            <label for="area">Area</label>
-            <input type="text" id="area" name="area">
-            <br>
-
-            <hr>
-            <!--Order 1-->
-            <label for="tank">1. Product</label>
-            <select id="tank" name="tank1">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-            <br>
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size1">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty1" min="0">
-
-            <br>
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color1">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer1">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate1">
-            <br>
-
-            <hr>
-            <!--Order 2-->
-
-            <label for="tank">2. Product</label>
-            <select id="tank" name="tank2">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size2">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty2" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color2">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer2">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate2">
-            <br>
-
-            <hr>
-            <!--Order 3-->
-
-            <label for="tank">3. Product</label>
-            <select id="tank" name="tank3">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size3">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty3" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color3">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer3">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate3">
-            <br>
-
-            <hr>
-            <!--Order 4-->
-
-            <label for="tank">4. Product</label>
-            <select id="tank" name="tank4">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size4">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty4" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color4">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer4">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate4">
-            <br>
-
-            <hr>
-            <!--Order 5-->
-
-            <label for="tank">5. Product</label>
-            <select id="tank" name="tank5">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size5">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty5" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color5">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer5">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate5">
-            <br>
-
-            <hr>
-            <!--Order 6-->
-
-            <label for="tank">6. Product</label>
-            <select id="tank" name="tank6">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size6">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty6" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color6">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer6">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate6">
-            <br>
-
-            <hr>
-            <!--Order 7-->
-
-            <label for="tank">7. Product</label>
-            <select id="tank" name="tank7">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size7">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty7" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color7">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer7">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate7">
-            <br>
-
-            <hr>
-            <!--Order 8-->
-
-            <label for="tank">8. Product</label>
-            <select id="tank" name="tank8">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size8">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty8" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color8">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer8">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate8">
-            <br>
-
-            <hr>
-            <!--Order 9-->
-
-            <label for="tank">9. Product</label>
-            <select id="tank" name="tank9">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size9">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty9" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color9">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer9">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate9">
-            <br>
-
-            <hr>
-            <!--Order 10-->
-
-            <label for="tank">10. Product</label>
-            <select id="tank" name="tank10">
-                <option value="" selected></option>
-                <option value="AG">Arka Ganga</option>
-                <option value="Pure">Arka Ganga Pure</option>
-                <option value="NG">Namo Ganga</option>
-                <option value="Loft">Loft Tank</option>
-                <option value="UT">Underground Tank</option>
-                <option value="HT">Horizontal Tank</option>
-                <option value="Cap16_1">Cap 16 Inches Single Layer</option>
-                <option value="Cap16_2">Cap 16 Inches Double Layer</option>
-                <option value="Cap19">Cap 19 Inches</option>
-            </select>
-
-            <br>
-
-            <label for="size">&nbsp;&nbsp;&nbsp;&nbsp;Size</label>
-            <select id="size" name="size10">
-                <option value="" selected></option>
-                <option value="225">225</option>
-                <option value="300">300</option>
-                <option value="325">325</option>
-                <option value="400">400</option>
-                <option value="500">500</option>
-                <option value="750">750</option>
-                <option value="1000">1000</option>
-                <option value="1500">1500</option>
-                <option value="2000">2000</option>
-                <option value="3000">3000</option>
-                <option value="5000">5000</option>
-                <option value="10000">10000</option>
-            </select>
-
-            <br>
-
-            <label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
-            <input type="number" id="qty" name="qty10" min="0">
-
-            <br>
-
-            <label for="color">&nbsp;&nbsp;&nbsp;&nbsp;Color</label>
-            <select id="color" name="color10">
-                <option value="" selected></option>
-                <option value="Y">Yellow</option>
-                <option value="B">Black</option>
-                <option value="W">White</option>
-                <option value="F">Firozi</option>
-                <option value="G">Green</option>
-            </select>
-
-            <br>
-
-            <label for="layer">&nbsp;&nbsp;&nbsp;&nbsp;Layer</label>
-            <select id="layer" name="layer10">
-                <option value="" selected></option>
-                <option value="3L">3 Layer</option>
-                <option value="4L">4 Layer</option>
-                <option value="5L">5 Layer</option>
-                <option value="6L">6 Layer</option>
-                <option value="7L">7 Layer</option>
-                <option value="Fum">Fum</option>
-            </select>
-
-            <br>
-
-            <label for="rate">&nbsp;&nbsp;&nbsp;&nbsp;Rate</label>
-            <input type="text" id="rate" name="rate10">
-            <br>
-
-            <hr>
-            <!--Payment Terms-->
-            <label for="terms">Payment Terms</label>
-            <select id="terms" name="terms" required>
-                <option value="" selected></option>
-                <option value="COD">Payment on Delivery</option>
-                <option value="7 days">Within One Week</option>
-                <option value="15 days">Within 15 Days</option>
-            </select>
-            <br>
-
-            <!--Site Delivey Deatils-->
-            <label for="dly">Site Delivery Details</label>
-            <input type="text" id="dly" name="dly">
-            <br>
-
-            <!--Remarks-->
-            <label for="remarks">Remarks</label>
-            <input type="text" id="remarks" name="remarks">
-            <br>
-
-            <hr>
-
-            <input id="submit" type="submit" value="Submit">
+            <!-- Product Section -->
+            <div class="card">
+                <div class="section-title">
+                    <span>Order Details</span>
+                </div>
+
+                <div class="products-wrapper">
+
+                    <!-- Product Card -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 1</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank1">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size1">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty1" placeholder="Qty">
+
+                            <select name="color1">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer1">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate1" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 2</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank2">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size2">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty2" placeholder="Qty">
+
+                            <select name="color2">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer2">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate2" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 3</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank3">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size3">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty3" placeholder="Qty">
+
+                            <select name="color3">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer3">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate3" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 4</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank4">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size4">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty4" placeholder="Qty">
+
+                            <select name="color4">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer4">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate4" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 5</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank5">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size5">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty5" placeholder="Qty">
+
+                            <select name="color5">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer5">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate5" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 6</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank6">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size6">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty6" placeholder="Qty">
+
+                            <select name="color6">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer6">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate6" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 7</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank7">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size7">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty7" placeholder="Qty">
+
+                            <select name="color7">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer7">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate7" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 8</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank8">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size8">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty8" placeholder="Qty">
+
+                            <select name="color8">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer8">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate8" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 9</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank9">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size9">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty9" placeholder="Qty">
+
+                            <select name="color9">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer9">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate9" placeholder="Rate">
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <div class="product-header">
+                            <h3>Product 10</h3>
+                        </div>
+
+                        <div class="product-grid">
+                            <select name="tank10">
+                                <option value="">Select Product</option>
+                                <option value="AG">Arka Ganga</option>
+                                <option value="Pure">Arka Ganga Pure</option>
+                                <option value="NG">Namo Ganga</option>
+                                <option value="Loft">Loft Tank</option>
+                                <option value="UT">Underground Tank</option>
+                                <option value="HT">Horizontal Tank</option>
+                            </select>
+
+                            <select name="size10">
+                                <option value="">Size</option>
+                                <option value="225">225</option>
+                                <option value="300">300</option>
+                                <option value="500">500</option>
+                                <option value="750">750</option>
+                                <option value="1000">1000</option>
+                                <option value="1500">1500</option>
+                                <option value="2000">2000</option>
+                                <option value="3000">3000</option>
+                                <option value="5000">5000</option>
+                                <option value="10000">10000</option>
+                            </select>
+
+                            <input type="number" name="qty10" placeholder="Qty">
+
+                            <select name="color10">
+                                <option value="">Color</option>
+                                <option value="Y">Yellow</option>
+                                <option value="B">Black</option>
+                                <option value="W">White</option>
+                                <option value="F">Firozi</option>
+                                <option value="G">Green</option>
+                            </select>
+
+                            <select name="layer10">
+                                <option value="">Layer</option>
+                                <option value="3L">3 Layer</option>
+                                <option value="4L">4 Layer</option>
+                                <option value="5L">5 Layer</option>
+                                <option value="6L">6 Layer</option>
+                                <option value="7L">7 Layer</option>
+                            </select>
+
+                            <input type="number" step="0.01"  name="rate10" placeholder="Rate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Details -->
+            <div class="card">
+                <div class="section-title">
+                    <span>Payment & Delivery</span>
+                </div>
+
+                <div class="grid-3">
+                    <div class="input-group">
+                        <label>Payment Terms</label>
+                        <select name="terms" required>
+                            <option value="">Select Terms</option>
+                            <option value="COD">Payment on Delivery</option>
+                            <option value="7 days">Within One Week</option>
+                            <option value="15 days">Within 15 Days</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Site Delivery Details</label>
+                        <input type="text" name="dly" placeholder="Enter Delivery Details">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Remarks</label>
+                        <input type="text" name="remarks" placeholder="Additional Remarks">
+                    </div>
+                </div>
+            </div>
+
+            <button class="submit-btn" type="submit">
+                Submit Order
+            </button>
+
         </form>
     </div>
+
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwmiBJSiOJW1xUpewH5sSIIVnoSq2dwTPrNZIUe0CuXQCZj1gW-wrw1-KbpWTblxdy8_g/exec'
         const form = document.forms['Order Form']
 
         form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you! your form is submitted successfully."))
-                .then(() => { window.location.reload(); })
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    alert('Order submitted successfully!')
+                    window.location.reload()
+                })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+
 </body>
 
 </html>
